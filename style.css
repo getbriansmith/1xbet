@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.content {
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.header a {
+  text-decoration: none;
+  background: rgb(0, 159, 252);
+  box-shadow: 0 0 2px rgba(80, 60, 168, 0.733);
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.header::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.header h2 {
+  font-size: 80px;
+  color: rgb(0, 159, 252);
+  text-shadow: 0 1px blue;
+  margin-bottom: 20px;
+}
+.header h2 span {
+  color: white;
+}
+.header p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 7px;
+}
+.content .btns {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.content .btns a {
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 500px;
+  text-align: center;
+  transition: background 300ms ease-in;
+}
+
+.content .btns a:hover {
+  background: rgb(45, 189, 45);
+}
+.about {
+  background-image: linear-gradient(rgb(210, 210, 241), rgb(148, 212, 255));
+  padding-top: 50px;
+  height: 100vh;
+  width: 100vw;
+}
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(74, 97, 224);
+}
+.about-section {
+  margin-top: 100px;
+  background: rgba(255, 2555, 255, 0.1);
+  min-width: 280px;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+.about p {
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+  padding: 0 40px;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+footer {
+  background: #222;
+  width: 100vw;
+  color: rgb(148, 185, 228);
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 768px) {
+  .content .btns a {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .header h2 {
+    font-size: 60px;
+  }
+  .content .btns a {
+    width: 250px;
+  }
+}
