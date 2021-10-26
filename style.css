@@ -27,13 +27,24 @@
 }
 .header a {
   text-decoration: none;
-  background: rgb(0, 159, 252);
-  box-shadow: 0 0 2px rgba(80, 60, 168, 0.733);
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
+}
+.header a:first-child{
+  background: rgb(45, 189, 45);
+}
+.header a:last-child{
+  background: rgb(0, 159, 252);
+  box-shadow: 0 0 2px rgba(80, 60, 168, 0.733);
+}
+.content .btns a:hover {
+   background: rgb(0, 159, 252);
+}
+.content .btns a:last-child:hover {
+  background: rgb(45, 189, 45);
 }
 .header::after {
   position: absolute;
@@ -74,9 +85,6 @@
   transition: background 300ms ease-in;
 }
 
-.content .btns a:hover {
-  background: rgb(45, 189, 45);
-}
 .about {
   background-image: linear-gradient(rgb(210, 210, 241), rgb(148, 212, 255));
   padding-top: 50px;
