@@ -37,7 +37,7 @@
   background: rgb(45, 189, 45);
 }
 .header a:last-child{
-  background: rgb(0, 159, 252);
+  background: #8feb34;
   box-shadow: 0 0 2px rgba(80, 60, 168, 0.733);
 }
 .content .btns a:hover {
